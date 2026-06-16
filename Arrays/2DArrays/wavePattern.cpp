@@ -7,14 +7,15 @@ print the array in wave pattern
 4 5 2 6
 4 12 5 6
 
-op: 
+op:
 1 2 3 5
 6 2 5 4
 4 12 5 6
 
-*/ 
-int main (){
-    int n,m;
+*/
+int main()
+{
+    int n, m;
     cin >> n >> m;
 
     int arr[n][m];
@@ -24,12 +25,13 @@ int main (){
         for (int j = 0; j < m; j++)
         {
             cin >> arr[i][j];
-        }   
-        cout << endl;  
+        }
+        cout << endl;
     }
-    
-     for (int i = 0; i < n; i++){
-        if (i%2 == 0)
+
+    for (int i = 0; i < n; i++)
+    {
+        if (i % 2 == 0)
         {
             for (int j = 0; j < m; j++)
             {
@@ -38,21 +40,20 @@ int main (){
         }
         else
         {
-            for (int j = m-1; j >= 0; j--)
+            for (int j = m - 1; j >= 0; j--)
             {
-               cout << arr[i][j] << " ";
+                cout << arr[i][j] << " ";
             }
-            
         }
         cout << endl;
-     }
-    
+    }
 }
 
 // colunwise now
 
-int main (){
-    int n,m;
+int main()
+{
+    int n, m;
     cin >> n >> m;
 
     int arr[n][m];
@@ -62,12 +63,13 @@ int main (){
         for (int j = 0; j < m; j++)
         {
             cin >> arr[i][j];
-        }   
+        }
     }
-     cout << endl;  
-    
-     for (int j = 0; j < m; j++){
-        if (j%2 == 0)
+    cout << endl;
+
+    for (int j = 0; j < m; j++)
+    {
+        if (j % 2 == 0)
         {
             for (int i = 0; i < n; i++)
             {
@@ -76,12 +78,11 @@ int main (){
         }
         else
         {
-            for (int i = n-1; i >= 0; i--)
+            for (int i = n - 1; i >= 0; i--)
             {
-               cout << arr[i][j] << " ";
+                cout << arr[i][j] << " ";
             }
-            
         }
         cout << endl;
-     }
+    }
 }
