@@ -36,11 +36,11 @@ int main()
     for (int j = 0; j < m; j++)
     {
         cout << arr[0][j] << ' ';
-    };
+    }
 
     for ( int  i = 1; i < n; i++)
     {
-        cout
-    }
+        cout << arr[i][m - 1] << ' ';
+    };
     
 }
